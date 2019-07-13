@@ -1,0 +1,299 @@
+/* ------------ 头部 ------------ */
+.header-row {
+	padding: 30px 0;
+	box-sizing: border-box;
+}
+
+.manage {
+	display: flex;
+	float: right;
+	align-items: center;
+}
+
+.manage a {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+}
+
+.manage .manage-set {
+	margin-right: 20px;
+}
+
+.manage .manage-notification {
+	margin-right: 40px;
+}
+
+.manage .manage-logout {
+	width: 110px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #f92525;
+}
+
+/* ------------ 头部 end ------------ */
+
+#main {
+	padding-bottom: 54px;
+	background-color: #f5f8f9;
+}
+
+/* ------------ 导航栏块 ------------ */
+.nav-panel {
+	padding: 50px 0;
+}
+
+.nav-panel .overview {
+	float: left;
+}
+
+.overview h1 {
+	font-size: 30px;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+.overview p {
+	font-size: 15px;
+	opacity: .7;
+}
+
+.nav {
+	position: relative;
+	float: right;
+	margin-top: 40px;
+}
+
+.nav li {
+	float: left;
+	line-height: 24px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.nav li:not(:last-child) {
+	margin-right: 34px;
+}
+
+.nav li a {
+	display: block;
+	color: #262b2e;
+}
+
+.slideBlock {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	opacity: .2;
+	background-color: #262b2e;
+	transition: all .3s ease;
+}
+
+/* ------------ 导航栏块 end ------------ */
+
+
+/* ------------ 展览块 ------------ */
+.annunciate-left,
+.annunciate-right {
+	width: 560px;
+	height: 288px;
+}
+
+.annunciate-left {
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.slideshow {
+	position: relative;
+	width: 540px;
+	height: 270px;
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.slideshow .banner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 700%;
+	height: 100%;
+	background-color: #000000;
+	transition-property: left;
+	transition-timing-function: ease-in-out;
+}
+
+.banner li {
+	float: left;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+}
+
+.slideshow .arrow-l,
+.slideshow .arrow-r {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	text-align: center;
+	background-color: #000;
+	transform: translateY(-50%);
+}
+
+.slideshow .arrow-l {
+	left: 0;
+}
+
+.slideshow .arrow-r {
+	right: 0;
+}
+
+.slideshow .arrow-l:hover,
+.slideshow .arrow-r:hover {
+	color: red;
+}
+
+.slideshow .circle {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	align-items: flex-end;
+	transform: translateX(-50%);
+}
+
+.slideshow .circle li {
+	float: left;
+	width: 8px;
+	height: 10px;
+	margin: 4px;
+	cursor: pointer;
+	background-color: #c0c3c5;
+	transition: height .25s ease;
+}
+
+.slideshow .circle li:hover,
+.slideshow .circle .current {
+	height: 14px;
+	background-color: #f92525;
+}
+
+.annunciate-right {
+	float: right;
+}
+
+.annunciate-right .info-title {
+	padding: 40px 50px 30px;
+}
+
+.annunciate-right .info-title p {
+	float: left;
+	font-size: 18px;
+}
+
+.annunciate-right .info-title button {
+	float: right;
+	width: 95px;
+	height: 40px;
+	border: solid 2px #262b2e20;
+	border-radius: 2px;
+	background-color: transparent;
+}
+
+.info-table {
+	width: 100%;
+	padding: 12px 50px;
+	border-top: 1px solid #f0f0f0;
+}
+
+.info-table tr {
+	height: 50px;
+	text-align: left;
+}
+
+.info-table tr:first-child {
+	height: 44px;
+}
+
+.info-table tr th:last-child,
+.info-table tr td:last-child {
+	text-align: right;
+}
+
+.info-table tr td:last-child button {
+	width: 65px;
+	height: 30px;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	background-color: #5dd054;
+}
+
+/* ------------ 展览块 end ------------ */
+
+
+/* ------------ 数据表 ------------ */
+.data-panel #graph {
+	height: 349px;
+	margin: 20px 0;
+}
+
+.data-panel #pie {
+	float: left;
+}
+
+.data-panel #histogram {
+	float: right;
+}
+
+.data-panel #pie,
+.data-panel #histogram {
+	width: 560px;
+	height: 377px;
+}
+
+/* ------------ 数据表 end ------------ */
+
+
+/* ------------ 底部 ------------ */
+footer {
+	background-color: #202124;
+}
+
+.footer-top {
+	padding: 80px 0;
+	box-sizing: border-box;
+}
+
+.footer-top .logo {
+	float: left;
+	margin-right: 78px;
+}
+
+.navlink dl {
+	float: left;
+	margin: -10px 120px 0 0;
+	font-size: 13px;
+	line-height: 28px;
+}
+
+.navlink dl a:hover {
+	text-decoration: underline;
+}
+
+.footer-bottom {
+	width: 100%;
+	height: 38px;
+	background-color: #1c1d20;
+}
+
+/* ------------ 底部 end ------------ */
